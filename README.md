@@ -43,6 +43,6 @@ Se realizan las siguientes validaciones:
 
 Se incluye una función de reinicio que permite limpiar el formulario completo y comenzar de nuevo.
 
-##Vista
+## Vista
 
 ![Vista](https://github.com/ClaudioVergara2/LiquidacionSueldo/blob/main/Prototipo.jpg)
