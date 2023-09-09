@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et_suelobase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Sueldo Base"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/et_diastra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="dias trabajos"
+        android:inputType="number"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/bt_sueldo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="CalcularSuelo"
+        android:text="CALCULAR SUELDO MENSUAL"
+        android:textColor="@color/black"
+        app:backgroundTint="#BCBBB9"
+        app:rippleColor="#989898" />
+
+    <TextView
+        android:id="@+id/tx_sueldoMensual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SUELDO MENSUAL:" />
+
+    <EditText
+        android:id="@+id/et_bonos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="bonos"
+        android:inputType="number"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/bt_liqui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="CalcularImponible"
+        android:text="CALCULAR LIQUIDACION"
+        android:textColor="@color/black"
+        app:backgroundTint="#BCBBB9"
+        app:rippleColor="#989898" />
+
+    <TextView
+        android:id="@+id/tx_imponible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SUELDO IMPONIBLE:" />
+
+    <TextView
+        android:id="@+id/tx_afp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="13% AFP:" />
+
+    <TextView
+        android:id="@+id/tx_salud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="7% SALUD:" />
+
+    <TextView
+        android:id="@+id/tx_descuento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TOTAL DESCUENTOS:" />
+
+    <TextView
+        android:id="@+id/tx_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TOTAL A PAGAR:" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="Reset"
+        android:text="RESET"
+        android:textColor="@color/black"
+        app:backgroundTint="#BCBBB9"
+        app:iconTint="#FFFFFF"
+        app:rippleColor="#989898" />
+
+</LinearLayout>
